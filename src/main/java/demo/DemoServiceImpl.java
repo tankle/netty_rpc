@@ -12,8 +12,10 @@ import org.slf4j.LoggerFactory;
 public class DemoServiceImpl implements DemoService {
     private static final Logger log = LoggerFactory.getLogger(DemoServiceImpl.class);
 
-    public String echo(String input) {
-        return "echo:"+input;
+
+    public String say(String input) {
+        return "From Server: You are welcome";
+
     }
 
     public MessageDTO loadObject(int messageId) {

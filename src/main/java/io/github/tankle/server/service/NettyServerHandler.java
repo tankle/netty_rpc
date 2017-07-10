@@ -32,7 +32,7 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<RemoteReques
 
         Object actualServiceImpl = RemoteServiceServer.getActualServiceImpl(request.getServiceName());
 
-        log.info("--------------------Begin handle the request --------------------" );
+        log.info("--------------------Begin handle the request --------------------: " + request.getServiceName() );
 
         if (actualServiceImpl != null) {
 
